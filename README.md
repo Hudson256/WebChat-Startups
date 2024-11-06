@@ -5,6 +5,7 @@
 Este projeto é uma aplicação web que permite aos usuários gerar ideias para startups. Utilizando tecnologias modernas como React no frontend e FastAPI no backend, a aplicação se conecta a um serviço de inteligência artificial para gerar ideias com base em prompts fornecidos pelos usuários.
 
 ## Estrutura do Projeto
+```bash
 /Frontend
     /public
         index.html
@@ -19,7 +20,7 @@ Este projeto é uma aplicação web que permite aos usuários gerar ideias para 
     /app
         /services
             ai_service.py
-
+```
 
 ### Frontend
 
