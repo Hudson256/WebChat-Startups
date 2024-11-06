@@ -121,7 +121,5 @@ Este projeto está licenciado sob a MIT License. Veja o arquivo `LICENSE` para m
 
 Para mais informações, entre em contato com hudsono256@gmail.com.
 
----
 
-Essa documentação deve ajudar qualquer pessoa, mesmo aquelas com pouco conhecimento técnico, a entender como o projeto funciona e como executá-lo. Se precisar de mais informações ou ajustes, é só avisar!
             
