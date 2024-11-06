@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import '../styles/styles.css';
 
 function Chat() {
     const [prompt, setPrompt] = useState('');
@@ -17,7 +18,7 @@ function Chat() {
     };
 
     return (
-        <div>
+        <div id="chat-container">
             <h1>Generate a Startup Idea</h1>
             <form onSubmit={handleSubmit}>
                 <input
@@ -28,7 +29,11 @@ function Chat() {
                 />
                 <button type="submit">Generate Idea</button>
             </form>
-            {idea && <p>Idea: {idea}</p>}
+            {idea && (
+                <div id="response-container">
+                    <p id="response-text" dangerouslySetInnerHTML={{ __html: idea }} />
+                </div>
+            )}
         </div>
     );
 }
