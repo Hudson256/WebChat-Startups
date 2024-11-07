@@ -4,7 +4,8 @@ from app.core.config import settings
 def generate_idea(prompt: str) -> str:
     genai.configure(api_key=settings.GOOGLE_API_KEY)
     model = genai.GenerativeModel('gemini-1.5-flash')
-    response = model.generate_content(prompt)
+    prompt_with_language_instruction = f"Por favor, responda em português: {prompt}"
+    response = model.generate_content(prompt_with_language_instruction)
     formatted_response = format_response(response.text)
     return formatted_response
 
